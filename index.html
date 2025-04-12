@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            color: var(--tg-theme-text-color);
-            background: var(--tg-theme-bg-color);
-        }
-
-        .Main {
-            width: 100%;
-            padding: 25px;
-            text-align: center;
-
-        }
-
-        h1 {
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-
-        img {
-            width: 70px;
-            margin: 30px auto;
-        }
-
-        .btn {
-            border: 0;
-            border-radius: 5px;
-            margin-top: 50px;
-            height: 60px;
-            width: 200px;
-            font-style: 20px;
-            font-weight: 500;
-            cursor: pointer;
-            color: var(--tg-theme-button-text-color);
-            background: var(--tg-theme-button-color);
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фомичева | ВЭД</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="Main">
-        <h1>Тестовое приложение</h1>
-        <img src="{{ url_for('static', filename='bot.png') }}" alt="123">
-        <p></p>
-        <button class="btn">Кнопка</button>
-    </div>
 
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+
+  <!-- Верхние 3 карточки -->
+  <div class="top-row">
+    <div class="top-card">
+      <img src="image.png" alt="icon">
+      <span>Платежи<br>в Китай</span>
+    </div>
+    <div class="top-card">
+      <img src="image.png" alt="icon">
+      <span>Логистика</span>
+    </div>
+    <div class="top-card">
+      <img src="image.png" alt="icon">
+      <span>Консультация</span>
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="grid-block">
+    <div class="card tall">
+      <img src="image.png" alt="mashtab" style="width: 70%; border-radius: 12px;">
+    </div>
+    <div class="card tall green">
+      <img src="image.png" alt="icon" style="width: 40px; margin-bottom: 8px;">
+      ТОП-280 товаров для продажи на маркетплейсах
+    </div>
+    <div class="card wide">
+      <strong>Практикум MBA</strong><br>По международной торговле
+      <img src="image.png" alt="team">
+    </div>
+    <div class="card wide">
+      Как начать работать с Китаем
+      <img src="image.png" alt="flags">
+    </div>
+  </div>
+
+  <!-- Навигация -->
+  <div class="footer">
+    <div>Услуги</div>
+    <div class="active">Главная</div>
+    <div>Методички</div>
+    <div>ВЭД</div>
+  </div>
+
 </body>
 </html>
